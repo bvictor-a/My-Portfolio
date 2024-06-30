@@ -1,0 +1,34 @@
+footer {
+    margin: 100px auto;
+    display: flex;
+    padding: 40px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#text_footer {
+    font-size: clamp(16px, 4vw, 22px);
+    font-weight: bold;
+    color: var(--white);
+    text-align: center;
+}
+
+@media screen and (max-width: 1072px) {
+    footer {
+        height: auto;
+        gap: 25px;
+        margin: 0;
+        padding: 80px; 
+    }
+}
+
+@media screen and (max-width: 650px) {
+    footer {
+        padding: 60px;
+    }
+    #links_profile {
+        gap: 20px;
+    }
+}

@@ -1,0 +1,40 @@
+header {
+    width: 100%;
+    position: sticky;
+    padding: 12px 8%;
+    background-color: #1b63ce;
+    top: 0;
+    z-index: 1;
+}
+
+#img_logo {
+    width: 40px;
+    border-radius: 50%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+
+nav ul li {
+    display: inline;
+    text-align: center;
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+a:focus {
+    border-bottom: 2px solid var(--white);
+}
