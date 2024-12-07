@@ -1,8 +1,8 @@
 header {
     width: 100%;
     position: sticky;
-    padding: 12px 8%;
-    background-color: #1b63ce;
+    padding: 22px 9%;
+    background-color: #1D1D1D;
     top: 0;
     z-index: 1;
 }
@@ -16,8 +16,15 @@ nav {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+
 }
+
+#title_site {
+    font-size: 20px;
+    font-family: "Staatliches", sans-serif;
+}
+
 
 a {
     text-decoration: none;
@@ -26,13 +33,15 @@ a {
 
 
 
-nav ul li {
+ ul li {
     display: inline;
+    flex-direction: row;
     text-align: center;
     list-style: none;
-    margin-right: 30px;
+    margin-right: 40px;
     font-weight: 500;
     font-size: 14px;
+ 
 }
 
 a:focus {

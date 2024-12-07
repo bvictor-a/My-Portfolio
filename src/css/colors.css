@@ -1,0 +1,95 @@
+.item-technologies:nth-child(1) {
+    border-color: #ff0000;
+    box-shadow: inset 0px 0px 50px 40px rgba(183, 37, 0, 0.204);
+
+}
+
+.item-technologies:nth-child(2) {
+    border-color: #264DE4;
+    box-shadow: inset 0px 0px 50px 40px rgba(0, 67, 212, 0.288);
+}
+
+.item-technologies:nth-child(3) {
+    border-color: #FFC700;
+    box-shadow: inset 0px 0px 50px 40px rgba(255, 199, 0, 20%); 
+}
+
+.item-technologies:nth-child(4) {
+    border-color: #FF00A8;
+    box-shadow: inset 0px 0px 50px 40px rgba(255, 0, 168, 20%);
+}
+
+.item-technologies:nth-child(5) {
+    border-color: #4B88FF;
+    box-shadow: inset 0px 0px 50px 40px rgba(75, 136, 255, 20%);
+
+}
+
+.item-technologies:nth-child(6) {
+    border-color: #FF3D00;
+    box-shadow: inset 0px 0px 50px 40px rgba(255, 0, 0, 10%);
+}
+
+.item-technologies:nth-child(7) {
+    
+    border-color: #4B88FF;
+    box-shadow: inset 0px 0px 50px 40px rgba(75, 136, 255, 20%);
+}
+
+.item-technologies:nth-child(8) {
+    border-color: #A8A8A8;
+    box-shadow: inset 0px 0px 50px 40px rgba(168, 168, 168, 20%);
+}
+
+.item-technologies:hover  {
+    transition: 0.3s ease-in-out;
+   
+}
+
+
+/* 
+.item-technologies:nth-child(1):hover{
+    transition: ease 0.2s;
+    background-color:#FF0000;
+    border-color: #FF0000;
+}
+
+.item-technologies:nth-child(2):hover {
+    transition: ease  0.2s;
+    background-color: #0085FF;
+    border-color: #0085FF;
+}
+
+.item-technologies:nth-child(3):hover {
+    transition:ease 0.2s;
+    background-color: #FFC700;
+    border-color: #FFC700;
+}
+
+.item-technologies:nth-child(4):hover {
+    transition:ease 0.2s;
+    background-color: #FF00A8;
+    border-color: #FF00A8;
+}
+
+.item-technologies:nth-child(5):hover {
+    transition:ease 0.2s;
+    background-color: #3B5C82;
+    border-color: #3B5C82;
+}
+
+.item-technologies:nth-child(6):hover {
+    transition:ease 0.2s;
+    background-color: #FF3D00;
+    border-color: #FF3D00;
+}
+.item-technologies:nth-child(7):hover {
+    transition:ease 0.2s;
+    background-color: #6B6B6B;
+    border-color: #6B6B6B;
+}
+.item-technologies:nth-child(8):hover {
+    transition:ease 0.2s;
+    background-color: #0075FF;
+    border-color: #0075FF;
+} */

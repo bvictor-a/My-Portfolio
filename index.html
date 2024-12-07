@@ -11,7 +11,11 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="/src/css/style.css">
+   <link rel="stylesheet" href="/src/css/presentation.css">
    <link rel="stylesheet" href="./src/css/header.css">
    <link rel="stylesheet" href="/src/css/projects.css">
    <link rel="stylesheet" href="/src/css/footer.css">
@@ -19,58 +23,104 @@
 <body>
 <header>
       <nav>
-               <img id="img_logo" src="./Assets/Logo_B_oficial.png" alt="">
+            <!--    <a id="title_site">Bvictor-a</a> -->
          <ul>
-            <li><a href="#about_me">Quem sou eu</a></li>
-            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#h2_about">Sobre Mim</a></li>
+            <li><a href="#h2_projects">Projetos</a></li>
             <li><a href="#footer">Contatos</a></li>
            
          </ul>
       </nav>
 </header>
       <main>
-         <section id="about_me" class="about-me">
+         <section id="presentation" >
             <div id="card_description">
-               <div id="card_img"> 
-                    <!--  <img id="img_card" src="/Assets/Logo_B_oficial.png"> -->
-               </div>
-                     
-            
+               
                      <div id="description">
-                        <h1>Olá, me chamo Bruno Victor</h1>
-                        <p>Atualmente cursando meu ultimo semestre em Análise e Desenvolvimento
-                           de Sistemas.
-                        </p>
-                        <p>Conheci o mundo de tecnologia a dois anos atrás e desde então 
-                           tenho trilhado meus estudos para a área de Desenvolvimento Web,
-                           especificamente Front End.
-                        </p>
+                        <h1>Olá, seja bem vindo</h1>
+                        <p id="p_description">Conheça um pouco sobre mim, meus projetos e minha experiência na tecnologia
 
-                        <p id="subtitle">Meus conhecimentos:</p>
+                           <div id="redes_link">
 
-                  <span class="technologies">
-                     <span class="item-technologies">html</span>
-                     <span class="item-technologies">css</span>
-                     <span class="item-technologies">javascript</span>
-                     <span class="item-technologies">git</span>
-                     <span class="item-technologies">sass</span>
-                     <span class="item-technologies">java</span>
-                     <span class="item-technologies">mysql</span>
-                  </span>
+                              <a class="redes_a"><img class="icon-redes"  src="/Assets/github.svg"></a>
+                              <a class="redes_a"><img class="icon-redes"  src="/Assets/linkedin.svg"></a>
+                              <a class="redes_a"><img class="icon-redes"  src="/Assets/Send.svg"></a>
 
-                  <div id="box-link-container">
-                  <a class="box-link"><img class="img-svg" src="/Assets/email.svg"></a>
-                  <a class="box-link"><img class="img-svg" src="/Assets/linkedin.svg"></a>
-                  <a class="box-link"><img class="img-svg" src="/Assets/github.svg"></a>
-                  </div>
+                           </div>
 
-                        
+
+                     </div>
+                     <div id="card_img">
+                        <img id="img_card" src="/Assets/Logo_B_oficial.png">
                      </div>
             </div>
+
+            <h2 id="h2_about">Sobre Mim</h2>    
+            <div id="about_me">
+                
+                  <span class="text-about">
+                     <p class="text-p">Olá, me chamo Bruno Victor</p>
+                     <span class="span-description">Recentemente concluí meu tecnólogo em Análise e Desenvolvimento de Sistemas, meu foco é área de front end,
+                     especificamente a criação de sites que me fez me apaixonar por Ti e iniciar meus estudos.</span>
+                     <span class="span-description" >Há 2 anos, tenho estudado as bases da web e principalmente praticado os conceitos necessários.</span>
+                     
+                     <p class="p-certificates">Minhas Certificações:</p>
+                     <p class="p-topic"><strong>Análise e desenvolvimento de Sistemas</strong> (2022-2024) - Universidade São Judas Tadeu</p>
+                     <p class="p-topic"><strong>Suporte de Ti do Google</strong> (2023-2024) - Coursera</p>
+                     <p class="p-topic"><strong>Ux Designer do Google</strong> (2022-2023) - Coursera</p>
+                  </span>
+            </div>
+            
+
+            <div id="container">
+               <h3>Minhas Linguagens e ferramentas</h3>
+               <span class="technologies">
+                  <span class="item-technologies">
+                     <img class="icon-redes" src="/Assets/brand-html5.svg">
+                     <span>HTML</span>
+                  
+                  </span>
+                  <span class="item-technologies">
+                     <img class="icon-redes" src="/Assets/brand-css3.svg">
+                     <span>css</span>
+                  </span>
+                  <span class="item-technologies">
+                     <img class="icon-redes" src="/Assets/brand-javascript.svg">
+                     <span>js</span>
+                  </span>
+                  <span class="item-technologies">
+                     <img class="icon-redes" src="/Assets/brand-sass.svg">
+                     <span>sass</span>
+                  </span>
+                  <span class="item-technologies">
+                     <img class="icon-redes" src="/Assets/java.svg">
+                     <span>java</span>
+                  </span>
+                  <span class="item-technologies">
+                     <img class="icon-redes" src="/Assets/brand-git.svg">
+                     <span>git</span>
+                  </span>
+                  <span class="item-technologies">
+                     <img class="icon-redes" src="/Assets/brand-vscode.svg">
+                     <span>vscode</span>
+                  </span>
+                  <span class="item-technologies">
+                     <img class="icon-redes" src="/Assets/brand-figma.svg">
+                     <span>figma</span>
+                  </span>
+
+         
+               </span>
+            
+            </div>
+            
 </section>
 
+
+
+
          <section id="projects" class="projects">
-                     <h2>Meus Projetos</h2>
+                     <h2 id="h2_projects">Meus Projetos</h2>
 
                <div id="item_project">
 
@@ -79,9 +129,9 @@
 
                          <div class="project-description">
                              <h4>Titulo do projeto</h4>
-                             <span class="description-project">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, dolorem minus nemo voluptatibus quod nobis ea tempora</span>
+                            <!--  <span class="description-project">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, dolorem minus nemo voluptatibus quod nobis ea tempora</span> -->
 
-                             <div class="container">
+                            <!--  <div class="container">
                               <span class="technologies">
                                  <span class="item-technologies">html</span>
                                  <span class="item-technologies">css</span>
@@ -89,7 +139,7 @@
 
                               </span>
                                                      
-                              </div>
+                              </div> -->
                          </div>
                       </div>
 
@@ -98,17 +148,17 @@
                      
                         <div class="project-description">
                            <h4>Titulo do projeto</h4>
-                           <span class="description-project">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, dolorem minus
-                              nemo voluptatibus quod nobis ea tempora</span>
+                        <!--    <span class="description-project">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, dolorem minus
+                              nemo voluptatibus quod nobis ea tempora</span> -->
                      
-                           <div class="container">
+                           <!-- <div class="container">
                               <span class="technologies">
                                  <span class="item-technologies">html</span>
                                  <span class="item-technologies">css</span>
                                  <span class="item-technologies">javascript</span>
                               </span>
                               
-                           </div>
+                           </div> -->
                         </div>
                      </div>
 
@@ -117,17 +167,17 @@
                      
                         <div class="project-description">
                            <h4>Titulo do projeto</h4>
-                           <span class="description-project">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, dolorem minus
-                              nemo voluptatibus quod nobis ea tempora</span>
+                           <!-- <span class="description-project">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, dolorem minus
+                              nemo voluptatibus quod nobis ea tempora</span> -->
                      
-                           <div class="container">
+                          <!--  <div class="container">
                               <span class="technologies">
                                  <span class="item-technologies">html</span>
                                  <span class="item-technologies">css</span>
                                  <span class="item-technologies">javascript</span>
                               </span>
                               
-                           </div>
+                           </div> -->
                         </div>
                      </div>
 
@@ -136,17 +186,17 @@
                      
                         <div class="project-description">
                            <h4>Titulo do projeto</h4>
-                           <span class="description-project">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, dolorem minus
-                              a</span>
+                        <!--    <span class="description-project">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, dolorem minus
+                              a</span> -->
                      
-                           <div class="container">
+                          <!--  <div class="container">
                               <span class="technologies">
                                  <span class="item-technologies">html</span>
                                  <span class="item-technologies">css</span>
                                  <span class="item-technologies">javascript</span>
                               </span>
                               
-                           </div>
+                           </div> -->
                         </div>
                      </div>
 
@@ -155,18 +205,18 @@
                      
                         <div class="project-description">
                            <h4>Titulo do projeto</h4>
-                           <span class="description-project">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, dolorem minus
-                              a</span>
+                           <!-- <span class="description-project">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, dolorem minus
+                              a</span> -->
                      
-                           <div class="container">
+                           <!-- <div class="container">
                      <span class="technologies">
                         <span class="item-technologies">html</span>
                         <span class="item-technologies">css</span>
                         <span class="item-technologies">javascript</span>
 
                      </span>
-                    <!--  <button>Acessar projeto</button> -->
-                           </div>
+                   
+                           </div> -->
                         </div>
                      </div>
 
@@ -175,17 +225,17 @@
                      
                         <div class="project-description">
                            <h4>Titulo do projeto</h4>
-                           <span class="description-project">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, dolorem minus
-                              a</span>
+                          <!--  <span class="description-project">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, dolorem minus
+                              a</span> -->
                      
-                           <div class="container">
+                           <!-- <div class="container">
                      <span class="technologies">
                         <span class="item-technologies">html</span>
                         <span class="item-technologies">css</span>
                         <span class="item-technologies">javascript</span>
                      </span>
                      
-                           </div>
+                           </div> -->
                         </div>
                      </div>
 
@@ -196,8 +246,28 @@
       </section>
       </main>
       <footer id="footer">
-        
-         
+
+            <div id="link_redes">
+                  <p>texto footer</p>
+                  <div id="link_icons">
+                     <!-- icones de teste -->
+                        <img src="./Assets/github2.svg" alt="">
+                        <img src="./Assets/linkedin2.svg" alt="">
+                        <img src="./Assets/Send.svg" alt="">
+                     
+                  </div>
+                 
+            </div>
+
+            <div id="link_certifications">
+                  <a href="https://www.frontendmentor.io/profile/bvictor-a">Meu perfil no Front End Menthor</a>
+                  <a href="">Certificação em Ux Designer</a>
+                  <a href="teste.com">Certificação em Suporte de TI</a>
+            </div>
+
+            <div id="box_copyright">
+               <span>Todos os diretos reservados</span>
+            </div>
       </footer>
 
 

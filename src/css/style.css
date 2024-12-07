@@ -1,8 +1,11 @@
+@import url(./colors.css);
+
+
 :root {
-   --paragraph: #E0E0E0;
+   --paragraph: #CCCCCC;
    --white: #fffffe;
    --blue:#272727;
-   --bg: #202020;
+   --bg: #242424;
    --bg-description: #EDEDED;
 }
 
@@ -22,108 +25,68 @@ html {
 }
 
 main {
-   padding: 12px 8%;
+   padding: 18px 10%;
    position: relative;
 }
 
-
-.about-me {
-   height: 600px;
+#vector {
+   opacity: 0.1;
+   width: 200px;
    display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
+   margin: 0 auto;
 }
 
-#card_description {
-   width: 990px;
-   height: 400px;
-   display: flex;
-   flex-direction: row;
-   border-radius: 8px;
-   background-color: #242424;
-   border: 2px solid #414141;
-}
 
-#card_img {
-   width: 30%;
-   margin: 30px;
-   background-color: #72757e;
-   border-radius: 5px;
-   border: 1px solid rgb(55, 255, 0)(255, 153, 153);
-}
-
-#img_card {
-   width: 300px;
-   object-fit: cover;
-}
-.img-svg {
-   width: 30px;
-   color: white;
-}
-
-#description {
-   width: 70%;
+#container {
+   margin-top: 180px;
    display: flex;
    flex-direction: column;
-   gap: 8px;
-   padding: 30px 0px 0px 10px;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: auto;
 }
 
-@keyframes gradientShift {
-   0% {
-      background-position: 100% 50%;
-   }
-
-   100% {
-      background-position: 0% 50%;
-   }
-}
-
-h1 {
-   font-size: 36px;
-   font-weight: bold;
-
-   background: linear-gradient(to right, blue, rgb(104, 167, 255), white);
-   background-size: 400% 200%;
-   background-clip: text;
-   -webkit-background-clip: text;
-   color: transparent;
-   animation: gradientShift 5s infinite linear;
-}
-
-
-p {
-   width: 95%;
-   font-size: 14px;
-   color: var(--paragraph);
-}
-
-#subtitle{
-   margin-top: 10px;
-   color: #1b63ce;
-   font-weight: bold;
+h3 {
+   font-family: "Staatliches", sans-serif;
+   font-weight: 400;
+   color: rgb(75, 136, 255);
+   text-transform: uppercase;
+   font-size: 38px;
 }
 
 .technologies {
-   margin-top: 5px;
+   width: 90%;
+   margin-top: 100px;
+   margin-bottom: 60px;
    display: flex;
+   justify-content: center;
    flex-direction: row;
    flex-wrap: wrap;
-   gap: 8px;
+   gap: 45px;
 }
 
 .item-technologies {
-   color: white;
-   border: 1px solid white;
-   padding: 5px;
-   border-radius: 100px;
-   min-width: 70px;
-   max-width: fit-content;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid;
+   border-radius: 8px;
+   width: 150px;
+   height: 120px;
+   box-shadow: inset;
    text-transform: uppercase;
-   text-align: center;
-   font-size: 12px;
+
+   color: white;
+   font-weight: 200;
+   font-size: 16px;
+   gap: 15px;
+   letter-spacing: 1px;
+   padding-top: 15px;
+   font-family: "Staatliches", sans-serif;
 }
+
 
 #box-link-container{
    width: auto;
@@ -178,7 +141,7 @@ button:hover{
 }
  */
 @media screen and (max-width: 1024px) {  
-   .about-me {
+   .about_me {
       padding-top: 3rem;
       height: auto;
    } 
@@ -187,8 +150,8 @@ button:hover{
       width: 90%;
       height: auto;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+
+
    }
 
    #card_img {
@@ -209,8 +172,7 @@ button:hover{
 
    h1 {
       margin-bottom: 10px;
-      text-align: center;
-      font-size: clamp(16px, 4vw, 24px);
+      font-size: clamp(16px, 8vw, 32px);
    }
    
    p {
