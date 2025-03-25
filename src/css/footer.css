@@ -1,74 +1,84 @@
 footer {
     display: flex;
-    padding: 50px 50px 0 50px;
+    padding: 50px 12.5% 0;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #1D1D1D;
+    background-color: #181520;
     font-size: 14px;
     height: auto;
 }
 
-#text_footer {
-    font-size: clamp(16px, 4vw, 22px);
-    font-weight: bold;
-    color: var(--white);
-    text-align: center;
-}
-
 #link_redes{
-    border-right: 2px solid #272727;
     border-radius: 2px;
     width: 35%;
     display: flex;
     height: 150px;
     flex-direction: column;
-    justify-content: space-around;
-    margin-left: 9%;
+    line-height: 35px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-#link_redes p {
-    font-size: 14px;
-    font-weight: 500;
-    color: #BDBDBD;
-    font-style: normal;
-}
 
-#link_redes #link_icons{
-    display: flex;
-    flex-direction: row;
-    gap: 14px;
-}
-
-#link_redes img {
-    width: 30px;
-}
-
-#link_certifications{
+#contact{
     width: 30%;
     height: 150px;
-    margin-left: 70px;
+    margin-left: 20%;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
     flex-direction: column;
+    line-height: 35px;
 }
 
-#link_certifications a{
-    line-height: 40px;
+#link_redes p, #contact p {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#link_redes a, #contact a {
+    font-size: 14px;
+    color: #DDDBDF;
+    font-weight: 500;
     text-decoration: underline;
-    color: #737373;
+}
+
+#contact a {
+    width: 140px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    padding: 5px;
+    transition: linear 0.3s;
+}
+
+#contact a:hover {
+    background-color: #181520;
+    color: #9A4BFF;
+    border-bottom: 2px solid #9A4BFF;
+}
+
+#contact img {
+    width: 20px;
+}
+
+#link_redes a:hover {
+    color: #9A4BFF;
 }
 
 #box_copyright {
     border-top: 2px solid #272727;
     border-radius: 1px;
     width: 100%;
-    margin-top: 140px;
+    margin-top: 110px;
     height: auto;
     text-align: center;
-    padding: 30px;
-    color: white;
+    padding: 20px;
+    color: rgb(157, 157, 157);
 }
 
 @media screen and (max-width: 1072px) {
