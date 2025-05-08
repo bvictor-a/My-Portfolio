@@ -1,47 +1,66 @@
 footer {
     display: flex;
-    padding: 50px 12.5% 0;
+    padding: 50px 13% 0;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     background-color: #181520;
     font-size: 14px;
-    height: auto;
 }
+
+.grid-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px dashed yellow */
+}
+
+
 
 #link_redes{
     border-radius: 2px;
-    width: 35%;
+    width: 50%;
     display: flex;
-    height: 150px;
+    height: auto;
+    max-height: 150px;
     flex-direction: column;
-    line-height: 35px;
     color: white;
     font-size: 16px;
     font-weight: bold;
+   /*  border: 2px dashed red */
 }
 
 
+
 #contact{
-    width: 30%;
-    height: 150px;
-    margin-left: 20%;
+    width: 50%;
+    height: auto;
     display: flex;
     flex-direction: column;
+
+    align-items: end;
     line-height: 35px;
+    /* border: 2px dashed red */
+}
+
+#contact p {
+    text-align: end;
+    margin-right: 10%;
 }
 
 #link_redes p, #contact p {
     color: white;
-    font-size: 16px;
+    width: 100%;
     font-weight: bold;
+    font-size: clamp(10px, 3vw, 14px);
 }
 
 #link_redes a, #contact a {
-    font-size: 14px;
+    font-size: clamp(5px, 3vw, 14px);
     color: #DDDBDF;
     font-weight: 500;
-    text-decoration: underline;
+    text-decoration:none;
+
 }
 
 #contact a {
@@ -54,7 +73,8 @@ footer {
     border-radius: 8px;
     padding: 5px;
     transition: linear 0.3s;
-}
+    /* border: 1px dashed blue; */
+} 
 
 #contact a:hover {
     background-color: #181520;
@@ -81,20 +101,3 @@ footer {
     color: rgb(157, 157, 157);
 }
 
-@media screen and (max-width: 1072px) {
-    footer {
-        height: auto;
-        gap: 25px;
-        margin: 0;
-        padding: 80px; 
-    }
-}
-
-@media screen and (max-width: 650px) {
-    footer {
-        padding: 60px;
-    }
-    #links_profile {
-        gap: 20px;
-    }
-}

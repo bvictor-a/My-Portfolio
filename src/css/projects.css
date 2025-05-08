@@ -1,8 +1,8 @@
 .projects {
-    height: auto;
-    margin-top: 190px;
-    border: 2px solid pink;
-    margin-bottom: 70px;
+    margin: 100px 0 100px;
+    max-width: 1400px;
+    padding: 0 1rem;
+    /* border: 2px solid pink; */
 }
 
 #h2_projects {
@@ -12,28 +12,39 @@
     font-family: "Staatliches", sans-serif;
     font-weight: 400;
     font-size: 48px;
-    border: 2px solid pink;
+    margin-bottom: 100px;
+    /* border: 2px solid pink; */
 }
 
-#item_project {
-    margin: 100px 0 50px 0;
+#grid_project {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-items: center;
+    /* margin: 100px 0 50px 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    border: 2px solid pink;
+    justify-content: center; */
+   /*  border: 2px solid rgb(203, 15, 46); */
 }
 
 .card-project {
-    width: 340px;
-    height: 305px;
-
+    width: 100%;
+    max-width: 340px;
+    height: auto; 
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    margin: 0 auto;
     border-radius: 8px;
     box-shadow: 1px 14px 32px -8px rgba(14, 14, 14, 0.514);
     border: 2px solid #9A4BFF;
+    transition: transform 0.3s;
+}
+
+.card-project:hover {
+    transform: translateY(-5px);
 }
 
 .image-project {
@@ -42,23 +53,23 @@
     object-fit: cover;
     border-radius: 8px 8px 0 0;
     border-bottom: 2px solid rgb(110, 60, 173, 21%);
-        border: 2px solid pink;
+    /*     border: 2px solid pink; */
 }
 
 .project-description {
-    width: 100%;
-    padding: 15px 0 0 15px;
+    width: 95%;
+    padding: 24px 0 26px 16px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-        border: 2px solid pink;
+/*         border: 2px solid pink; */
 }
 
 h4 {
     font-size: 18px;
     color: var(--white);
     line-height: 20px;
-    border: 2px solid pink;
+/*     border: 2px solid pink; */
 }
 
 .container {
@@ -67,7 +78,7 @@ h4 {
     justify-content: space-between ;
     align-items: baseline;
     margin-bottom: 20px;
-        border: 2px solid pink;
+/*         border: 2px solid pink; */
 }
 
 .container .technologies > .item-technologies {
@@ -79,36 +90,6 @@ h4 {
     height: auto;
     font-size: clamp(10px, 3vw, 14px);
     color: var(--paragraph);
-        border: 2px solid pink;
+       /*  border: 2px solid pink; */
 }
-
-
-@media  screen and (max-width: 1274px) {
-    .card-project {
-        width: 320px;
-        height: auto;
-        margin: 20px;
-    }
-
-    .projects {
-        padding-bottom: 15px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .card-project {
-        width: 300px;
-        height: auto;
-    }
-
-}
-
-@media screen and (max-width: 425px) {
-    .card-project {
-        width: 90%;
-
-    }
-}
-
-
 
