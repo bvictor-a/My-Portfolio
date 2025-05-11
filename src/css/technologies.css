@@ -17,6 +17,7 @@ h3 {
     color: white;
     margin-top: 25px;
     text-align: center;
+    line-height: 30px;
 }
 
 .technologies {
@@ -61,4 +62,78 @@ h3 {
 
 .icon-tech {
     width: 30px;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    #container {
+        margin: 80px 0 0 0;
+    }
+
+    .technologies {
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    .item-technologies {
+        width: 140px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    .item-technologies:nth-child(3) {
+        width: 200px;
+    }
+
+    .item-technologies:nth-child(7) {
+        width: 150px;
+    }
+
+    .item-technologies:nth-child(8) {
+        width: 150px;
+    }
+
+    .icon-tech {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+
+    .item-technologies {
+        width: 100px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+         .technologies {
+             margin-top: 50px;
+             justify-content: center;
+             gap: 20px;
+         }
+
+        .item-technologies:nth-child(3) {
+            width: 170px;
+        }
+    
+        .item-technologies:nth-child(7) {
+            width: 130px;
+        }
+        .item-technologies:nth-child(8) {
+            width: 130px;
+        }
+
+        .icon-tech {
+            width: 20px;
+        }
+}
+
+@media screen and (max-width: 485px) {
+
+    .technologies {
+            justify-content: start;
+        }
 }

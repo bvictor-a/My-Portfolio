@@ -46,6 +46,10 @@ footer {
     text-align: end;
 }
 
+#contact a {
+    margin-right: 35px;
+}
+
 #link_redes a, #contact a {
     font-size: clamp(12px, 5vw, 14px);
     color: #CFCFCFCF;

@@ -30,6 +30,13 @@ main {
    position: relative;
 }
 
+@media screen and (max-width: 1024px) {
+   
+   main {
+      padding: 18px 6%;
+   }
+}
+
 
 /* 
 @media screen and (max-width: 1024px) {  
