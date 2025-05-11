@@ -30,8 +30,8 @@ main {
    position: relative;
 }
 
-/* 
 
+/* 
 @media screen and (max-width: 1024px) {  
    .about_me {
       padding-top: 3rem;
@@ -42,8 +42,6 @@ main {
       width: 90%;
       height: auto;
       flex-direction: column;
-
-
    }
 
    #card_img {
@@ -92,4 +90,4 @@ main {
       align-items: flex-start;
       gap: 20px;
    }
-} */
+}  */

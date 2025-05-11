@@ -1,6 +1,5 @@
 footer {
     display: flex;
-    padding: 50px 13% 0;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
@@ -11,14 +10,11 @@ footer {
 .grid-footer {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    /* border: 1px dashed yellow */
+    padding: 50px 12% 0;
 }
 
 
-
 #link_redes{
-    border-radius: 2px;
     width: 50%;
     display: flex;
     height: auto;
@@ -27,66 +23,38 @@ footer {
     color: white;
     font-size: 16px;
     font-weight: bold;
-   /*  border: 2px dashed red */
 }
 
-
+#link_redes p,
+#contact p {
+    color: white;
+    width: 100%;
+    line-height: 35px;
+    font-weight: bold;
+    font-size: clamp(12px, 5vw, 18px);
+}
 
 #contact{
     width: 50%;
     height: auto;
     display: flex;
     flex-direction: column;
-
     align-items: end;
-    line-height: 35px;
-    /* border: 2px dashed red */
 }
 
 #contact p {
     text-align: end;
-    margin-right: 10%;
-}
-
-#link_redes p, #contact p {
-    color: white;
-    width: 100%;
-    font-weight: bold;
-    font-size: clamp(10px, 3vw, 14px);
 }
 
 #link_redes a, #contact a {
-    font-size: clamp(5px, 3vw, 14px);
-    color: #DDDBDF;
+    font-size: clamp(12px, 5vw, 14px);
+    color: #CFCFCFCF;
     font-weight: 500;
-    text-decoration:none;
-
-}
-
-#contact a {
-    width: 140px;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    border-radius: 8px;
-    padding: 5px;
     transition: linear 0.3s;
-    /* border: 1px dashed blue; */
-} 
-
-#contact a:hover {
-    background-color: #181520;
-    color: #9A4BFF;
-    border-bottom: 2px solid #9A4BFF;
+    text-decoration:none;
 }
 
-#contact img {
-    width: 20px;
-}
-
-#link_redes a:hover {
+#link_redes a:hover, #contact a:hover {
     color: #9A4BFF;
 }
 
@@ -101,3 +69,31 @@ footer {
     color: rgb(157, 157, 157);
 }
 
+#box_copyright span {
+    font-size: 12px;
+}
+
+@media screen and (max-width:768px) {
+
+    .grid-footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+        #contact {
+            align-items: flex-start;
+        }
+
+        #contact p {
+            text-align: start;      
+        }
+
+          #link_redes p,
+           #contact p {
+            width: 200px;
+
+        }
+        
+        #box_copyright {
+            margin-top: 60px;
+        }
+}
