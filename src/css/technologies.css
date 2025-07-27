@@ -5,10 +5,9 @@
 }
 
 h3 {
-    text-align: center;
-    font-family: "Staatliches", sans-serif;
-    font-weight: 400;
-    color: rgb(75, 136, 255);
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-size: 38px;
 }
@@ -16,18 +15,16 @@ h3 {
 #container > p {
     color: white;
     margin-top: 25px;
-    text-align: center;
     line-height: 30px;
 }
 
 .technologies {
-    margin-top: 100px;
+    margin-top: 40px;
     margin-bottom: 60px;
     display: flex;
-    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 45px;
+    gap: 30px;
 }
 
 .item-technologies {
@@ -36,32 +33,46 @@ h3 {
     justify-content: center;
     align-items: center;
     align-self: baseline;
-    border: 2px solid #9A4BFF;
-    border-radius: 8px;
-    width: 170px;
-    height: 60px;
-    border-radius: 28px;
+    
+    min-width: 130px;
+    max-width: 140px;
+    height: 50px;
+    border-radius: 50px;
     text-transform: uppercase;
 
     color: white;
-    background-color: #231c36;
-    font-weight: 200;
-    font-size: 32px;
+    
+    border: 2px solid transparent;
+    background:
+    linear-gradient(#181520, #181520) padding-box,
+    linear-gradient(-75deg, #252525, #260056) border-box;
+
+    font-weight: bold;
+    font-size: 24px;
     gap: 15px;
     letter-spacing: 2px;
-    font-family: "Staatliches", sans-serif;
+    font-family: "Space grotesk", sans-serif;
+    box-shadow: 0px 1px 16px 2px rgba(58, 44, 0, 0.443);
+
+    transition: all 0.2s ease-in;
+    
+       
 }
 
-.item-technologies:nth-child(3) {
-    width: 250px;
+.item-technologies:hover{
+    transform: scale(1.1);
+    border-color: #30006b;
+    background-color: bisque;
 }
 
-.item-technologies:nth-child(7) {
-    width: 200px;
+.item-technologies span {
+    font-size: 16px;
 }
+
+
 
 .icon-tech {
-    width: 30px;
+    width: 25px;
 }
 
 
@@ -73,25 +84,12 @@ h3 {
 
     .technologies {
         margin-top: 50px;
-        justify-content: center;
     }
 
     .item-technologies {
         width: 140px;
         height: 50px;
         font-size: 22px;
-    }
-
-    .item-technologies:nth-child(3) {
-        width: 200px;
-    }
-
-    .item-technologies:nth-child(7) {
-        width: 150px;
-    }
-
-    .item-technologies:nth-child(8) {
-        width: 150px;
     }
 
     .icon-tech {
@@ -110,21 +108,10 @@ h3 {
     }
 
          .technologies {
-             margin-top: 50px;
-             justify-content: center;
+             margin-top: 50px;  
              gap: 20px;
          }
 
-        .item-technologies:nth-child(3) {
-            width: 170px;
-        }
-    
-        .item-technologies:nth-child(7) {
-            width: 130px;
-        }
-        .item-technologies:nth-child(8) {
-            width: 130px;
-        }
 
         .icon-tech {
             width: 20px;

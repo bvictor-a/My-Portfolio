@@ -4,6 +4,9 @@
     height: auto;
     display: flex;
     flex-direction: column;
+
+   /*  background-color: #140a20;
+    background-image: url("/Assets/black-lozenge.png"); */
 }
 
 #card_description {
@@ -13,6 +16,7 @@
     flex-direction: row;
     border-radius: 8px;
     margin-bottom: 150px;
+
 }
 
 #description {
@@ -47,38 +51,51 @@ h1 {
     display: flex;
     flex-direction: row;
     gap: 15px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
-.redes_a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: 2px solid #442E5F;
-    border-radius: 8px;
-    transition: 0.3s;
-}
 
 .icon-redes {
     width: 45px;
 }
 
 .redes_a {
-    width: 170px;
+    width: 180px;
     height: 55px;
     display: flex;
     flex-direction: row;
-    padding-left: 5px;
-    gap: 5px;
-    
+    padding-left: 8px;
+    gap: 8px;
+    align-items: center;
+    border: 2px solid #252525;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.redes_a:hover  {
+    background-color: #140a20;
+    border-color: #ededed37;
+    box-shadow: 0px 1px 16px 2px rgba(58, 44, 0, 0.443);
+}
+
+.btn-download {
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    color: white;
+}
+
+.icon-redes:hover {
+    fill: #ffffff;
 }
 
 
+ion-icon {
+    font-size: 30px;
+    margin-bottom: 4px;
+    margin-left: 5px
+}
 
-
-/* MINHA LOGO
 #card_img {
     margin-right: 20px;
 }
@@ -89,32 +106,107 @@ h1 {
     border-radius: 50%;
     width: 350px;
     object-fit: cover;
-} */
+} 
 
 
 #h2_about {
-    margin-bottom: 50px;
-    text-align: center;
-    color: #9A4BFF;
-    font-size: 48px;
+    color: #ffffff;
+    font-size: 40px;
     font-weight: 500;
-    text-transform: uppercase;
-    font-family: "Staatliches", sans-serif;
+    text-transform: capitalize;
+    font-family: "Space Grotesk", sans-serif;
 }
+
 
 #about_me {
     width: auto;
     height: auto;
-    background-color: #181520;
-    box-shadow: 0px 0px 3px 1px rgba(32, 32, 32, 0.68);
-    border: 2px solid #9A4BFF;
+
+    border: 2px solid transparent;
+    background-color: transparent;
+    border: 2px solid #ededed37;
     border-radius: 20px;
-    padding: 15px 35px 35px 35px;
-     
+    padding: 45px 45px 45px 45px;
+
+    box-shadow: 0px 0px 15px 10px rgba(153, 75, 255, 5%);
+
+    display: flex;
+    flex-direction: row;
+
+    
 }
 
+.text-about {
+    width: 50%;
+
+}
+
+.timeline-section {
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.timeline-section h2 {
+    color: #ffc300;
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-left: 1.5rem;
+}
+
+.timeline {
+    position: relative;
+    margin-left: 20px;
+    border-left: 3px solid #333;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 40px;
+}
+
+.marker {
+    width: 12px;
+    height: 12px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    left: -7px;
+    top: 4px;
+    z-index: 1;
+}
+
+.line {
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    left: -6px;
+    top: 10px;
+}
+
+.content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.content h3 span {
+    font-weight: normal;
+}
+
+.content p {
+    margin: 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+
 .text-p {
-    font-weight: 500;
+    font-weight: bold;
     color: #ffffff;
     margin-top: 20px;
     font-size: 18px;
@@ -125,6 +217,7 @@ h1 {
     color: white;
     font-weight: 400;
     font-size: 16px;
+    line-height: 30px;
 }
 
 .p-certificates {
@@ -156,7 +249,7 @@ h1 {
 
     }
     #about_me {
-        padding: 15px 35px 35px 20px;
+        padding: 15px 35px 35px 25px;
     }
     .text-p {
         line-height: 25px;

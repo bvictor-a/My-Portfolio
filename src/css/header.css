@@ -5,6 +5,7 @@ header {
     background-color: #181520;
     top: 0;
     z-index: 1;
+    box-shadow: 0px 1px 16px 10px rgba(16, 16, 16, 0.718);
 }
 
 #img_logo {
@@ -17,6 +18,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.3s;
 
 }
 
