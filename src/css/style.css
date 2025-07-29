@@ -37,8 +37,6 @@ main {
    }
 }
 
-
-/* 
 @media screen and (max-width: 1024px) {  
    .about_me {
       padding-top: 3rem;
@@ -97,4 +95,4 @@ main {
       align-items: flex-start;
       gap: 20px;
    }
-}  */
+}  

@@ -246,7 +246,6 @@ ion-icon {
     }
     #h2_about {
         margin: 10px 0 20px 0;
-
     }
     #about_me {
         padding: 15px 35px 35px 25px;
@@ -258,5 +257,74 @@ ion-icon {
 
     .span-description, .p-topic {
         line-height: 30px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    #about_me {
+          flex-direction: column;
+    }
+
+    .text-about {
+            width: auto;
+    }
+
+    .timeline-section {
+        padding: 40px 0px 0px 0px;
+    }
+
+    .timeline-section h2 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .timeline-section h2 {
+        margin-bottom: 40px;
+        margin-left: 0px;
+    }
+
+        .timeline {
+            position: relative;
+            margin-left: 0px;
+            border-left: 3px solid #333;
+        }
+
+
+        .timeline-item {
+            padding-left: 30px;
+            margin-bottom: 40px;
+        }
+
+        .marker {
+            width: 12px;
+            height: 12px;
+            background-color: #333;
+            border-radius: 50%;
+            position: absolute;
+            left: -7px;
+            top: 4px;
+            z-index: 1;
+        }
+
+        .line {
+            width: 20px;
+            height: 2px;
+            background-color: #333;
+            position: absolute;
+            left: -6px;
+            top: 10px;
+        }
+}
+
+
+@media screen and (max-width: 425px) {
+    #about_me {
+        padding: 15px 20px 20px 20px;
+    }
+
+    #redes_link {
+        display: flex;
+        flex-direction: column;
     }
 }
